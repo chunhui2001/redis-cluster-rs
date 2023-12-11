@@ -313,6 +313,7 @@ impl Connection {
                 return false;
             }
         }
+        
         true
     }
 
@@ -567,11 +568,11 @@ impl ConnectionLike for Connection {
     }
 
     fn check_connection(&mut self) -> bool {
-        true
+        self.check_connection()
     }
 
     fn is_open(&self) -> bool {
-        true
+        self.check_connection()
     }
 }
 
