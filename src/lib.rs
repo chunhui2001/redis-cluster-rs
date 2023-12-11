@@ -572,7 +572,7 @@ impl ConnectionLike for Connection {
     }
 
     fn is_open(&self) -> bool {
-        self.check_connection()
+        true
     }
 }
 
